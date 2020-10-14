@@ -1,59 +1,91 @@
- {
-  "workbench.iconTheme": "material-icon-theme",
-  // "editor.fontFamily": "Fira Sans Book",
-  "editor.fontSize": 15,
-  "editor.formatOnSave": true,
-  "php.suggest.basic": false,
-  "window.zoomLevel": 0.3,
-  "[javascript]": {
-    //"editor.defaultFormatter": "vscode.typescript-language-features"
-    //"editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "markdown-pdf.executablePath": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
-  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
-  "php.validate.executablePath": "D:\\PHP\\php.exe",
-  "php.executablePath": "D:\\PHP\\php.exe",
-  "breadcrumbs.enabled": true,
-  "editor.renderWhitespace": "none",
-  "editor.renderControlCharacters": true,
-  "workbench.sideBar.location": "left",
-  "beautify.language": {
-    "js": {
-      "type": ["json", "javascript"],
-      "filename": [".jshintrc", ".jsbeautify"]
+{
+    "workbench.colorTheme": "One Dark Pro Bold",
+    // "editor.fontFamily": "Fira Sans Book",
+    "[javascript]": {
+        //"editor.defaultFormatter": "vscode.typescript-language-features"
+        //"editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "css": ["css", "scss"],
-    "html": ["html", "htm", "vue"]
-  },
-  "go.useLanguageServer": true,
-  "go.goroot": "D:\\Go",
-  "go.gopath": "D:\\go_project",
-  "workbench.colorTheme": "Spacegray Eighties Dark",
-  "vim.easymotion": true,
-  "vim.incsearch": true,
-  "vim.useSystemClipboard": true,
-  "vim.useCtrlKeys": true,
-  "vim.hlsearch": true,
-  "vim.insertModeKeyBindings": [
-    {
-      "before": ["j", "j"],
-      "after": ["<Esc>"]
-    }
-  ],
-  "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": ["<leader>", "d"],
-      "after": ["d", "d"]
+    "breadcrumbs.enabled": true,
+    "git.ignoreWindowsGit27Warning": true,
+    "go.formatTool": "goimports",
+    "go.goroot": "C:\\Go",
+    "go.gopath": "C:\\Users\\LM-LL\\go",
+    "go.useLanguageServer": true,
+    "go.useCodeSnippetsOnFunctionSuggest": true,
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.statusBarColorControl": false,
+    //  "vim.insertModeKeyBindings": [
+    //    {
+    //      "before": ["j", "j"],
+    //      "after": ["<Esc>"]
+    //    }
+    //  ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        // 按下leader键加r键，如果还未开始调试，则不进行调试，直接运行文件
+        {
+            "before": [
+                "<leader>",
+                "r",
+            ],
+            "commands": [
+                "workbench.action.debug.run"
+            ],
+            "when": [
+                "!inDebugMode"
+            ],
+        },
+        // 按下leader键加r键，如果正在调试时，则重新运行文件（restart）
+        {
+            "before": [
+                "<leader>",
+                "r",
+            ],
+            "commands": [
+                "workbench.action.debug.restart"
+            ],
+            "when": [
+                "inDebugMode"
+            ],
+        },
+        // 按下leader键加d键，开始调试
+        {
+            "before": [
+                "<leader>",
+                "d",
+            ],
+            "commands": [
+                "workbench.action.debug.start"
+            ]
+        },
+        // 按下leader键+w，保存当前文件
+        {
+            "before": [
+                "<leader>",
+                "w",
+            ],
+            "commands": [
+                "workbench.action.files.save",
+            ],
+        },
+        {
+            "before": [
+                "<C-n>"
+            ],
+            "commands": [
+                ":nohl"
+            ]
+        }
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false
     },
-    {
-      "before": ["<C-n>"],
-      "commands": [":nohl"]
-    }
-  ],
-  "vim.leader": "<space>",
-  "vim.handleKeys": {
-    "<C-a>": false,
-    "<C-f>": true
-  },
-  "editor.quickSuggestions": null
+    "editor.quickSuggestions": null,
+    "editor.lineNumbers": "on",
+    "window.zoomLevel": 0
 }
