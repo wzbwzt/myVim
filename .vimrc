@@ -36,16 +36,23 @@ filetype plugin indent on
 autocmd BufWritePost $MYVIMRC source $MYVIMRC
 "设置ctrl+s为保存
 map <C-S> :w<CR>
-"配色方案
-colorscheme molokai
 "插件管理
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/vim-easy-align'
+Plug 'preservim/nerdtree' "目录树
+Plug 'flazz/vim-colorschemes'
+Plug 'fatih/vim-go',{'do':':GoUpdateBinaries'}
 call plug#end()
 
+"设置项目目录自动开启
+autocmd VimEnter * NERDTree
+ 
 
-
-
+"配色方案
+set t_co=256
+colorscheme molokai 
+let g:molokai_original = 1
+let g:rehash256 = 1
 
 
 
