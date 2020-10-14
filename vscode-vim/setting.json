@@ -1,0 +1,59 @@
+ {
+  "workbench.iconTheme": "material-icon-theme",
+  // "editor.fontFamily": "Fira Sans Book",
+  "editor.fontSize": 15,
+  "editor.formatOnSave": true,
+  "php.suggest.basic": false,
+  "window.zoomLevel": 0.3,
+  "[javascript]": {
+    //"editor.defaultFormatter": "vscode.typescript-language-features"
+    //"editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "markdown-pdf.executablePath": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
+  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+  "php.validate.executablePath": "D:\\PHP\\php.exe",
+  "php.executablePath": "D:\\PHP\\php.exe",
+  "breadcrumbs.enabled": true,
+  "editor.renderWhitespace": "none",
+  "editor.renderControlCharacters": true,
+  "workbench.sideBar.location": "left",
+  "beautify.language": {
+    "js": {
+      "type": ["json", "javascript"],
+      "filename": [".jshintrc", ".jsbeautify"]
+    },
+    "css": ["css", "scss"],
+    "html": ["html", "htm", "vue"]
+  },
+  "go.useLanguageServer": true,
+  "go.goroot": "D:\\Go",
+  "go.gopath": "D:\\go_project",
+  "workbench.colorTheme": "Spacegray Eighties Dark",
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": true
+  },
+  "editor.quickSuggestions": null
+}
