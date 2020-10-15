@@ -1,6 +1,5 @@
-
 {
-  "workbench.iconTheme": "material-icon-theme",
+    "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "Spacegray Eighties Dark",
     "workbench.activityBar.visible": true,
  "editor.renderWhitespace": "none",
@@ -22,17 +21,18 @@
   "php.executablePath": "D:\\PHP\\php.exe",
   "workbench.sideBar.location": "left",
   "beautify.language": {
-    "js": {
+    "js":{
       "type": ["json", "javascript"],
-      "filename": [".jshintrc", ".jsbeautify"]
-    },
+      "filename": [".jshintrc", ".jsbeautify"],
     "css": ["css", "scss"],
     "html": ["html", "htm", "vue"]
+    } 
   },
   "go.useLanguageServer": true,
   "go.goroot": "D:\\Go",
   "go.gopath": "D:\\go_project",
-    "go.formatTool": "goimports",
+      "go.formatTool": "goimports",
+
    "vim.easymotion": true,
     "vim.incsearch": true,
     "vim.useSystemClipboard": true,
@@ -93,12 +93,27 @@
             "commands": [
                 ":nohl"
             ]
+        },{
+            "before": [
+                "E"
+            ],
+            "after": [
+                "g","T"
+            ]
+        },{
+            "before": [
+                "R"
+            ],
+            "after": [
+                "g","t"
+            ]
         }
+
     ],
     "vim.leader": "<space>",
     "vim.handleKeys": {
-        "<C-a>": false,
-        "<C-f>": false
+        "<C-a>": true,
+        "<C-f>": true
     },
 "editor.quickSuggestions": null,
 }
