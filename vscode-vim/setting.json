@@ -1,14 +1,10 @@
 {
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Spacegray Eighties Dark",
-    "workbench.activityBar.visible": true,
  "editor.renderWhitespace": "none",
   "editor.renderControlCharacters": true,
  "breadcrumbs.enabled": true,
     "window.menuBarVisibility": "toggle",
     "workbench.settings.openDefaultSettings": true,
     "window.enableMenuBarMnemonics": true,
- //"editor.fontFamily": "Fira Sans Book",
   "editor.formatOnSave": true,
   "php.suggest.basic": false,
   "[javascript]": {
@@ -115,5 +111,26 @@
         "<C-a>": true,
         "<C-f>": true
     },
-"editor.quickSuggestions": null,
+
+   //页面字体设置
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 13,
+  "editor.fontWeight": "380",
+  //终端配置
+  "terminal.integrated.fontFamily": "Fira Code",
+  "terminal.integrated.fontWeight": "100",
+  "terminal.integrated.fontSize": 12,
+
+  // 分割线配置
+  "editor.rulers": [80,120],
+  "workbench.colorCustomizations": {
+    "editorRuler.foreground": "#ff4081",
+    "externalConsole": false,
+  },
+  
+
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Ayu Mirage Bordered",
+  "workbench.activityBar.visible": true,
 }
