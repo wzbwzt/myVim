@@ -1,136 +1,176 @@
 {
- "editor.renderWhitespace": "none",
-  "editor.renderControlCharacters": true,
- "breadcrumbs.enabled": true,
-    "window.menuBarVisibility": "toggle",
-    "workbench.settings.openDefaultSettings": true,
-    "window.enableMenuBarMnemonics": true,
-  "editor.formatOnSave": true,
-  "php.suggest.basic": false,
-  "[javascript]": {
-    //"editor.defaultFormatter": "vscode.typescript-language-features"
-    //"editor.defaultFormatter": "esbenp.prettier-vscode"
+  "breadcrumbs.enabled": true,
+  "window.enableMenuBarMnemonics": true,
+  "[python]": {
+    "editor.formatOnType": true
   },
-  "markdown-pdf.executablePath": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
-  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
-  "php.validate.executablePath": "D:\\PHP\\php.exe",
-  "php.executablePath": "D:\\PHP\\php.exe",
-  "workbench.sideBar.location": "left",
-  "beautify.language": {
-    "js":{
-      "type": ["json", "javascript"],
-      "filename": [".jshintrc", ".jsbeautify"],
-    "css": ["css", "scss"],
-    "html": ["html", "htm", "vue"]
-    } 
-  },
-  "go.useLanguageServer": true,
-  "go.goroot": "D:\\Go",
-  "go.gopath": "D:\\go_project",
-      "go.formatTool": "goimports",
-
-   "vim.easymotion": true,
-    "vim.incsearch": true,
-    "vim.useSystemClipboard": true,
-    "vim.useCtrlKeys": true,
-    "vim.hlsearch": true,
-    "vim.statusBarColorControl": false,
-   "vim.normalModeKeyBindingsNonRecursive": [
-        // 按下leader键加r键，如果还未开始调试，则不进行调试，直接运行文件
-        {
-            "before": [
-                "<leader>",
-                "r",
-            ],
-            "commands": [
-                "workbench.action.debug.run"
-            ],
-            "when": [
-                "!inDebugMode"
-            ],
-        },
-        // 按下leader键加r键，如果正在调试时，则重新运行文件（restart）
-        {
-            "before": [
-                "<leader>",
-                "r",
-            ],
-            "commands": [
-                "workbench.action.debug.restart"
-            ],
-            "when": [
-                "inDebugMode"
-            ],
-        },
-        // 按下leader键加d键，开始调试
-        {
-            "before": [
-                "<leader>",
-                "d",
-            ],
-            "commands": [
-                "workbench.action.debug.start"
-            ]
-        },
-        // 按下leader键+w，保存当前文件
-        {
-            "before": [
-                "<leader>",
-                "w",
-            ],
-            "commands": [
-                "workbench.action.files.save",
-            ],
-        },
-        {
-            "before": [
-                "<C-n>"
-            ],
-            "commands": [
-                ":nohl"
-            ]
-        },{
-            "before": [
-                "E"
-            ],
-            "after": [
-                "g","T"
-            ]
-        },{
-            "before": [
-                "R"
-            ],
-            "after": [
-                "g","t"
-            ]
-        }
-
-    ],
-    "vim.leader": "<space>",
-    "vim.handleKeys": {
-        "<C-a>": true,
-        "<C-f>": true
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.statusBarColorControl": false,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // 按下leader键加r键，如果还未开始调试，则不进行调试，直接运行文件
+    {
+      "before": [
+        "<leader>",
+        "r",
+      ],
+      "commands": [
+        "workbench.action.debug.run"
+      ],
+      "when": [
+        "!inDebugMode"
+      ],
     },
-
-   //页面字体设置
-  "editor.fontFamily": "Fira Code",
+    // 按下leader键加r键，如果正在调试时，则重新运行文件（restart）
+    {
+      "before": [
+        "<leader>",
+        "r",
+      ],
+      "commands": [
+        "workbench.action.debug.restart"
+      ],
+      "when": [
+        "inDebugMode"
+      ],
+    },
+    // 按下leader键加d键，开始调试
+    {
+      "before": [
+        "<leader>",
+        "d",
+      ],
+      "commands": [
+        "workbench.action.debug.start"
+      ]
+    },
+    // 按下leader键+w，保存当前文件
+    {
+      "before": [
+        "<leader>",
+        "w",
+      ],
+      "commands": [
+        "workbench.action.files.save",
+      ],
+    },
+    {
+      "before": [
+        "<C-n>"
+      ],
+      "commands": [
+        ":nohl"
+      ]
+    },
+    {
+      "before": [
+        "E"
+      ],
+      "after": [
+        "g",
+        "T"
+      ]
+    },
+    {
+      "before": [
+        "R"
+      ],
+      "after": [
+        "g",
+        "t"
+      ]
+    }
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  "go.gopath": "/root/.gvm/pkgsets/common-gopath",
+  "go.goroot": "/root/.gvm/gos/go1.19",
+  //页面字体设置
+  // "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "editor.fontSize": 13,
   "editor.fontWeight": "380",
-  //终端配置
-  "terminal.integrated.fontFamily": "Fira Code",
-  "terminal.integrated.fontWeight": "100",
-  "terminal.integrated.fontSize": 12,
-
-  // 分割线配置
-  "editor.rulers": [80,120],
+  "editor.formatOnSave": true,
+  "editor.renderWhitespace": "none",
+  "editor.renderControlCharacters": true,
+  // // 分割线配置
+  "editor.rulers": [
+    80,
+    120
+  ],
   "workbench.colorCustomizations": {
     "editorRuler.foreground": "#ff4081",
     "externalConsole": false,
   },
-  
-
+  //TERMINAL
+  // "terminal.integrated.fontFamily": "Hack NF",
+  "terminal.integrated.letterSpacing": 0,
+  "terminal.integrated.lineHeight": 1.1,
+  "terminal.integrated.fontWeight": "500",
+  //   "terminal.integrated.fontSize": 13,
+  "terminal.integrated.customGlyphs": true,
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.profiles.linux": {
+    "bash": {
+      "path": "bash",
+      "icon": "terminal-bash"
+    },
+    "zsh": {
+      "path": "zsh"
+    },
+    "tmux": {
+      "path": "tmux",
+      "icon": "terminal-tmux"
+    },
+    "pwsh": {
+      "path": "pwsh",
+      "icon": "terminal-powershell"
+    },
+    "mybash": {
+      "path": "/usr/bin/bash"
+    },
+    "zsh (login)": {
+      "path": "zsh",
+      "args": [
+        "-l"
+      ]
+    }
+  },
+  "terminal.integrated.defaultProfile.linux": "zsh (login)",
+  "terminal.integrated.enableBell": true,
+  "terminal.integrated.env.linux": {
+    "name": "joel"
+  },
+  "terminal.integrated.env.windows": {
+    "name": "joel"
+  },
+  "terminal.integrated.scrollback": 1000,
+  //THEME
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Ayu Mirage Bordered",
-  "workbench.activityBar.visible": true,
 }
